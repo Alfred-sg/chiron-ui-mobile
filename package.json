@@ -1,0 +1,29 @@
+{
+  "name": "chiron-ui-mobile",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "alfred",
+    "email": "sc941203@foxmail.com"
+  },
+  "repository": "/chiron-ui-mobile",
+  "scripts": {
+    "dev": "father doc dev",
+    "build": "father build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "father": "^2.16.0",
+    "typescript": "^3.3.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-icons": "^3.9.0"
+  }
+}
