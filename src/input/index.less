@@ -1,0 +1,46 @@
+@prefixCls: chiron;
+@inputCls: chiron-input;
+
+.@{inputCls}-wrap {
+  outline: thin solid #1890ff;
+}
+
+.@{inputCls}-clearable-wrap {
+  position: relative;
+  padding-right: 25px;
+
+  .clear-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+  }
+}
+
+.@{inputCls} {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  font-size: 16px;
+  border: none;
+}
+
+// 聚焦时边框 https://www.w3school.com.cn/jsref/prop_style_outline.asp
+.@{inputCls}:focus {
+  outline: none;
+}
+
+.@{inputCls}.no-outline:focus {
+  outline: thin solid #1890ff;
+}
+
+// placeholder 样式设置 https://www.cnblogs.com/chao202426/p/10879527.html
+.@{inputCls}::-webkit-input-placeholder, textarea::-webkit-input-placeholder, 
+.@{inputCls}:-moz-placeholder, textarea:-moz-placeholder, 
+.@{inputCls}::-moz-placeholder, textarea::-moz-placeholder,
+.@{inputCls}:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #bbb;
+}
