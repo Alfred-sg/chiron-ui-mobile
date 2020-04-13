@@ -5,6 +5,20 @@
   outline: thin solid #1890ff;
 }
 
+.@{inputCls}-prefix-icon-wrap {
+  position: relative;
+  padding-left: 25px;
+
+  .prefix-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+}
+
 .@{inputCls}-clearable-wrap {
   position: relative;
   padding-right: 25px;
@@ -17,6 +31,73 @@
     color: #ccc;
     cursor: pointer;
   }
+
+  .clear-icon:hover {
+    color: #1890ff;
+  }
+}
+
+.@{inputCls}-error-wrap {
+  position: relative;
+  padding-right: 25px;
+  outline: thin solid #f50;
+  color: #f50;
+
+  .error-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: #f50;
+    cursor: pointer;
+  }
+}
+
+.@{inputCls}-suffix-icon-wrap {
+  position: relative;
+  padding-right: 25px;
+
+  .suffix-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+}
+
+.@{inputCls}-clearable-wrap.@{inputCls}-error-wrap {
+  padding-right: 45px;
+
+  .clear-icon {
+    right: 25px;
+  }
+}
+
+.@{inputCls}-clearable-wrap.@{inputCls}-suffix-icon-wrap {
+  padding-right: 45px;
+
+  .clear-icon {
+    right: 25px;
+  }
+}
+
+.@{inputCls}-clearable-wrap.@{inputCls}-error-wrap.@{inputCls}-suffix-icon-wrap {
+  padding-right: 65px;
+
+  .error-icon {
+    right: 25px;
+  }
+
+  .clear-icon {
+    right: 45px;
+  }
+}
+
+.@{inputCls}-error-message {
+  color: #f50;
+  font-size: 12px;
 }
 
 .@{inputCls} {

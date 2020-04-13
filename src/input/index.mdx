@@ -9,10 +9,42 @@ import Input from './';
 
 # 输入框组件
 
-## 普通输入框
+不支持 focus、光标左侧、密码展示。
+
+## 基本
+
+### 普通
 
 <Input placeholder="请输入" />
 
-## 手机
+### 可清除
 
-<Input type="phone" defaultValue="1243" />
+<Input clear={true} placeholder="请输入" />
+
+### 错误提示
+
+<Input clear={true} placeholder="请输入" error="错误提示" />
+
+### disabled
+
+<Input placeholder="请输入" disabled={true} />
+
+## 前后缀图标
+
+### 前缀
+
+<Input prefixIcon="AiOutlineUser" placeholder="请输入姓名" />
+
+### 后缀
+
+<Input suffixIcon="AiOutlineDollar" placeholder="请输入姓名" />
+
+## 展示格式
+
+### 手机
+
+<Input type="phone" defaultValue="17285341687" placeholder="请输入手机号" />
+
+### 银行卡
+
+<Input type="bankCard" defaultValue="8888888888888888" placeholder="请输入银行卡号" />
