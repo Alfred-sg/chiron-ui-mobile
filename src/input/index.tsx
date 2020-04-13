@@ -12,7 +12,7 @@ const { AiFillCloseCircle, AiOutlineInfoCircle } = Icons;
 const Input = (props: Props) => {
   const finalProps = convert(props);
   const { type, placeholder, maxLength, noOutline, clear = false, 
-    disabled, error, onErrorClick, prefixIcon, suffixIcon,
+    disabled, readonly, error, onErrorClick, prefixIcon, suffixIcon,
     filter, transformer, defaultValue = '', value = '', onChange, 
     onBlur, onFocus, 
   } = finalProps;
@@ -67,6 +67,7 @@ const Input = (props: Props) => {
   const inputProps = {
     type,
     disabled,
+    readonly: readonly ? 'readonly' : false,// input 设置只读 https://blog.csdn.net/qq_37138818/article/details/89012073
     className: inputCls,
     placeholder,
     maxLength,

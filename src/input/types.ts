@@ -6,6 +6,7 @@ export interface Props {
   noOutline?: boolean;// 无边框模式
   clear?: boolean;// 是否带清除按钮
   disabled?: boolean;
+  readonly?: boolean;
   error?: string;// 错误信息
   prefixIcon?: string;// 前缀图标
   suffixIcon?: string;// 后缀图标
