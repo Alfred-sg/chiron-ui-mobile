@@ -14,10 +14,12 @@
     "build": "father build"
   },
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.10",
+    "@types/react-dom": "^16.9.6",
     "father": "^2.16.0",
     "typescript": "^3.3.3"
   },

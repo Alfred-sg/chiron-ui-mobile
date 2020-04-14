@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import classnames from 'classnames';
 import { IconContext } from 'react-icons';
 import * as Icons from 'react-icons/ai';// https://react-icons.netlify.com/#/icons/ai
@@ -67,7 +67,7 @@ const Input = (props: Props) => {
   const inputProps = {
     type,
     disabled,
-    readonly: readonly ? 'readonly' : false,// input 设置只读 https://blog.csdn.net/qq_37138818/article/details/89012073
+    readOnly: readonly ? 'readonly' : false,// input 设置只读 https://blog.csdn.net/qq_37138818/article/details/89012073
     className: inputCls,
     placeholder,
     maxLength,
